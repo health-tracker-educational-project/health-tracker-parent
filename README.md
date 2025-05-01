@@ -1,6 +1,9 @@
 # Health Tracker parent library.
 ## How to connect ?
-### 1. Add this parent to your pom instead of default.
+### 1. Pull this library and build it with next command:
+
+`mvn clean install`
+### 2. Add this parent to your pom instead of default.
 #### pom.xml:
 ```
     <parent>
@@ -9,7 +12,7 @@
         <version>1.0.1</version>
     </parent>
 ```
-### 2. If you have dependencies that exists in parent, version can be deleted.
+### 3. If you have dependencies that exists in parent, version can be deleted.
 Like this:
 ```
 <dependencies>
