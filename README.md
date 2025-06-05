@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.healthtracker</groupId>
         <artifactId>healthtracker-parent</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
     </parent>
 ```
 ### 3. If you have dependencies that exists in parent, version can be deleted.

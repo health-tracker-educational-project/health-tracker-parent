@@ -12,7 +12,7 @@
 
     <groupId>com.healthtracker</groupId>
     <artifactId>healthtracker-parent</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <name>Health Tracker Parent</name>
     <description>Parent library for Health Tracker services</description>
 
@@ -20,7 +20,7 @@
 
     <properties>
         <java.version>23</java.version>
-        <healthtracker-common.version>1.0.4</healthtracker-common.version>
+        <healthtracker-common.version>1.0.5</healthtracker-common.version>
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
         <mapstruct.version>1.6.3</mapstruct.version>
         <preliquibase.version>1.6.0</preliquibase.version>
