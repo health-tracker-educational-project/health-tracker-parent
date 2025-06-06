@@ -23,19 +23,9 @@ jobs:
       with:
         java-version: '23'
         distribution: 'temurin'
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
-
-
-    - name: Show generated settings.xml (safe for debug, do not expose secrets)
-      run: |
-        echo "==== settings.xml content (secrets masked) ===="
-        sed 's/<password>.*<\/password>/<password>***<\/password>/g' /home/runner/work/health-tracker-parent/health-tracker-parent/settings.xml
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
-      env:
-        GITHUB_TOKEN: ${{ github.token }}

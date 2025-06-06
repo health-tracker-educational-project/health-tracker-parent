@@ -27,13 +27,13 @@
         <rider-spring.version>1.7.2</rider-spring.version>
         <springdoc-openapi-starter-webmvc-ui.version>2.8.4</springdoc-openapi-starter-webmvc-ui.version>
     </properties>
-<distributionManagement>
-         <repository>
-                  <id>github</id>
-                  <name>GitHub OWNER Apache Maven Packages</name>
-                  <url>https://maven.pkg.github.com/health-tracker-educational-project/health-tracker-parent</url>
-         </repository>
-</distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>ht-parent</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/health-tracker-educational-project/health-tracker-parent</url>
+        </repository>
+    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>
