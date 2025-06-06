@@ -30,7 +30,7 @@ jobs:
     - name: Show generated settings.xml (safe for debug, do not expose secrets)
       run: |
         echo "==== settings.xml content (secrets masked) ===="
-        sed 's/<password>.*<\/password>/<password>***<\/password>/g' ~/.m2/settings.xml
+        sed 's/<password>.*<\/password>/<password>***<\/password>/g' /home/runner/work/health-tracker-parent/health-tracker-parent/settings.xml
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
